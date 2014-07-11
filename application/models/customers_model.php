@@ -4,15 +4,18 @@ class Customers_model extends CI_Model {
 	
 	public function __construct()
 	{
-		$this->load->database();	
+		$this->load->database();			
+	}
 		
-		}
-		
-	public function get_customers()
+	public function get_customers($id = 0)
 	{
-		$query = $this->db->get('test_Customers');
-		return $query->result_array();
-		
-		}	
+		if((int)$id == 0)
+		{//id is zero, show all!
+			$query = $this->db->get('test_Customers');			
+		}else{//show one customer
+			$query = $this->db->get_where('test_Customers',array('CustomerID'=>$id));
+		}				
+		return $query->result_array();		
+	}	
 }
 
