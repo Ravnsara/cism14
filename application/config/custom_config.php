@@ -5,5 +5,6 @@ $config['style'] = 'flatly.css';
 $config['banner'] = 'Default Banner';
 $config['title'] = 'Default Title';
 $config['copyright'] = 'Default Copyright';
-$config['theme'] = '';
+$config['masthead'] = 'Default Masthead';
+$config['theme'] = 'themes/bootswatch/';
 
