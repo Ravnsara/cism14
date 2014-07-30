@@ -18,7 +18,8 @@
 		}
 	}else{//sorry no customers
 		echo '<p>Sorry, no customers!</p>';
-	}		
+	}
+	echo anchor('customer/add','Add Customer');		
 	$this->load->view($this->config->item('theme') . 'footer');	
 ?>
 		
