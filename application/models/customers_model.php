@@ -18,8 +18,7 @@ class Customers_model extends CI_Model {
 	}#end get_customers()
 		
 	public function insert(){
-		//var_dump($_POST);
-		//die;
+		
 		$data = array(
 			'FirstName' => $this->input->post('FirstName'),
 			'LastName' => $this->input->post('LastName'),
